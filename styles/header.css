@@ -46,8 +46,12 @@
     position: absolute;
     height: 2px;
     border-radius: 5px;
-  background: #fff;
+  background: #0F364A;
     width: 100%;
+  }
+
+  .openbtn.onlytop span{
+  background: white;
   }
 
 
@@ -65,9 +69,12 @@
   top: 5px;
   left:50%;
   transform: translateX(-50%);
-  color: #fff;
+  color: #0F364A;
   font-size: 0.6rem;
   text-transform: uppercase;
+}
+.openbtn.onlytop span:nth-of-type(2)::after {
+  color: white;
 }
 
 /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
@@ -98,7 +105,7 @@
   position: relative;
   width: 33px;
   height: 33px;
-  margin-bottom: 48px;
+  margin-bottom: 60px;
 }
 .insta_img img{
   position: absolute;

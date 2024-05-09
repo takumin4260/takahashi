@@ -1,0 +1,51 @@
+/* fadeUp */
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+
+.fadeUpTrigger {
+  opacity: 0;
+}
+
+/* 画面表示 **/
+.displayOn{
+  display: block !important;
+}
+
+/* 点滅 **/
+.flash {
+  animation: blink-slow 3s infinite;
+}
+
+@keyframes blink-slow {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}

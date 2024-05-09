@@ -1,0 +1,59 @@
+.foot_container{
+  padding: calc(80/1280 * 100vw) 0 calc(45/1280 * 100vw) calc(100/1280 * 100vw);
+  background-color: #BEC1BD;
+  position: relative;
+  height: calc(175/1280 * 100vw);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.address_wrap{
+  position: absolute;
+  left: calc(100/1280 * 100vw);
+  bottom: calc(45/1280 * 100vw);
+}
+
+.foot_items{
+  display: flex;
+  align-items: end;
+  position: absolute;
+  right: calc(66/1280 * 100vw);
+  bottom: calc(45/1280 * 100vw);
+}
+
+.foot_img{
+  width:  calc(170/1280 * 100vw);
+  height: calc(100/1280 * 100vw);
+  position: relative;
+  margin-right: calc(30/1280 * 100vw);
+}
+
+.link_item{
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+}
+
+.link_item .scroll_img{
+  width: calc(25/1280 * 100vw);
+  height: calc(94/1280 * 100vw);
+  position: relative;
+}
+
+.link_item .insta_icon{
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.link_item .contact{
+  background-color: white;
+  padding: calc(5/1280 * 100vw) calc(20/1280 * 100vw);
+  border-radius: 100px;
+  border: 1px solid #0F364A;
+}
+
+.foot_container .copy{
+  letter-spacing: 0;
+}

@@ -1,4 +1,31 @@
 /* -----------------------------------------------
+共通パーツ
+----------------------------------------------- */
+
+.more_button{
+  padding: calc(20/1280 * 100vw)  calc(45/1280 * 100vw);
+  background-color: #0F364A;
+  width: calc(300/1280 * 100vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+}
+.more_button .arrow_img{
+  width: calc(78/1280 * 100vw);
+  height: calc(10/1280 * 100vw);
+  position: relative;
+}
+
+.onlytop{
+  display: none;
+}
+
+.common{
+  display: none;
+}
+
+/* -----------------------------------------------
 fvセクション
 ----------------------------------------------- */
 .fv_container{
@@ -56,6 +83,18 @@ fvセクション
 }
 .fv_item .text{
   padding-left: calc(10/1280 * 100vw);
+}
+
+.fv_mark_outline{
+  position: absolute;
+  right: calc(50/1280 * 100vw);
+  bottom: calc(40/1280 * 100vw);
+}
+
+.fv_mark{
+  width: calc(125/1280 * 100vw);
+  height: calc(125/1280 * 100vw);
+  position: relative;
 }
 
 /* -----------------------------------------------
@@ -117,6 +156,94 @@ commentセクション
 }
 
 /* -----------------------------------------------
+estateセクション
+----------------------------------------------- */
+.estate_container{
+  padding: calc(100/1280 * 100vw) calc(130/1280 * 100vw);
+  background-image: url("../img/top/estate_bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #D7E1DE;
+  background-position: center center;
+}
+
+.estate_buttons{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.estate_buttons .button{
+  background-color: white;
+  border-radius: 100px;
+  border: 1px solid #0F364A;
+  padding: calc(10/1280 * 100vw) calc(45/1280 * 100vw);
+  margin: 0 calc(7/1280 * 100vw);
+}
+.estate_buttons .button:first-child{
+  background-color: #0F364A;
+}
+
+.estate_wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.estate_item .label{
+  padding: calc(10/1280 * 100vw) calc(45/1280 * 100vw) calc(10/1280 * 100vw) calc(35/1280 * 100vw);
+  border-top-right-radius: 30px;
+  background-color: #A5BCBF;
+  width: fit-content;
+}
+
+.estate_card{
+  padding: calc(18/1280 * 100vw) calc(18/1280 * 100vw);
+  background-color: white;
+  width: fit-content;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+}
+
+.estate_card .house_img{
+  width: calc(273/1280 * 100vw);
+  height: calc(185/1280 * 100vw);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.estate_card .info_item .address{
+  padding-bottom: calc(20/1280 * 100vw);
+  display: flex;
+  align-items: center;
+}
+
+.estate_card .info_item .address .pin{
+  width: calc(10/1280 * 100vw);
+  height: calc(16/1280 * 100vw);
+  position: relative;
+  margin-right: 5px;
+}
+
+.estate_card .price{
+  display: flex;
+  align-items: end;
+  padding-top: calc(10/1280 * 100vw);
+  padding-left: calc(5/1280 * 100vw);
+  border-top: 1px solid #0F364A;
+}
+.estate_card .price span:nth-child(1){
+  margin-bottom: 2px;
+}
+
+.estate_card .price span:nth-child(2){
+  margin: 0 calc(5/1280 * 100vw) 0 calc(10/1280 * 100vw);
+}
+.estate_card .price span:nth-child(3){
+  margin-bottom: 2px;
+}
+/* -----------------------------------------------
 teamセクション
 ----------------------------------------------- */
 .team_container{
@@ -124,10 +251,107 @@ teamセクション
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #0F364A;
 }
 
 .team_container .icon_img{
   width: calc(64/1280 * 100vw);
   height: calc(64/1280 * 100vw);
   position: relative;
+}
+
+.team_container .team_img{
+  width: calc(600/1280 * 100vw);
+  height: calc(320/1280 * 100vw);
+  position: relative;
+  border-radius: 40px;
+  border: 10px solid white;
+  overflow: hidden;
+}
+
+/* -----------------------------------------------
+newsセクション
+----------------------------------------------- */
+.news_container{
+  padding: calc(100/1280 * 100vw);
+  background-image: url("../img/top/lineup_bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #BEC1BD;
+  background-position: center center;
+}
+
+.news_wrap{
+  width: calc(890/1280 * 100vw);
+}
+.news_wrap .news_items{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #707070;
+}
+.news_wrap .news_items:last-child{
+  border-bottom: 1px solid #707070;
+}
+.news_wrap .news_img{
+  width: calc(100/1280 * 100vw);
+  height: calc(95/1280 * 100vw);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: calc(20/1280 * 100vw) calc(80/1280 * 100vw) calc(20/1280 * 100vw) calc(23/1280 * 100vw);
+  background-color: white;
+}
+
+/* -----------------------------------------------
+galleryセクション
+----------------------------------------------- */
+.gallery_container{
+  padding: calc(114/1280 * 100vw) 0;
+}
+
+.gallery_wrap{
+  width: fit-content;
+  display: flex;
+}
+
+.gallery_item{
+  padding: calc(80/1280 * 100vw) calc(33/1280 * 100vw);
+  width: fit-content;
+  border: 1px solid #0F364A;
+}
+
+.gallery_item .gallery_img{
+  width: calc(300/1280 * 100vw);
+  height: calc(300/1280 * 100vw);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.gallery_item .gallery_no{
+  padding: 5px calc(15/1280 * 100vw);
+  border: 1px solid #0F364A;
+  border-radius: 100px;
+  width: fit-content;
+}
+
+
+
+/* -----------------------------------------------
+voiceセクション
+----------------------------------------------- */
+.voice_container{
+  padding: calc(117/1280 * 100vw)  calc(150/1280 * 100vw)  calc(143/1280 * 100vw)  calc(150/1280 * 100vw);
+  background-image: url("../img/top/voice_bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #D7E1DE;
+  background-position: center center;
+}
+.voice_wrap{
+  width: calc(985/1280 * 100vw);
+  height: calc(311/1280 * 100vw);
+  background-color: white;
+  border-radius: 30px;
 }
