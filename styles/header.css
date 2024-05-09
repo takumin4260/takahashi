@@ -1,0 +1,121 @@
+.header_container{
+  z-index: 100;
+  position: relative;
+}
+
+.header_logo {
+  position: fixed;
+  width: calc(180/1280 * 100vw);
+  height: calc(52/1280 * 100vw);
+  left: calc(52/1280 * 100vw);
+  top: calc(40/1280 * 100vw);
+}
+
+.header_logo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+}
+.icon_wrap{
+  position: fixed;
+  right:  calc(42/1280 * 100vw);
+  top: calc(45/1280 * 100vw);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.openbtn{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  background :transparent;
+  cursor: pointer;
+    width: 40px;
+    height:40px;
+    margin-bottom: 32px;
+}
+
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    height: 2px;
+    border-radius: 5px;
+  background: #fff;
+    width: 100%;
+  }
+
+
+.openbtn span:nth-of-type(1) {
+  top:20%; 
+}
+
+.openbtn span:nth-of-type(2) {
+  top:50%;
+}
+
+.openbtn span:nth-of-type(2)::after {
+  content:"Menu";
+  position: absolute;
+  top: 5px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn.active span:nth-of-type(1) {
+  top: 6px;
+  left: 11px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+}
+
+.openbtn.active span:nth-of-type(2){
+  top: 18px;
+  left: 11px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+}
+
+.openbtn.active span:nth-of-type(2)::after {
+  content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+    transform:translateY(0) rotate(-45deg);
+    content: "Close";
+    transform: translateY(0) rotate(-45deg);
+    top: 8px;
+    left: 4px;
+}
+.insta_img{
+  position: relative;
+  width: 33px;
+  height: 33px;
+  margin-bottom: 48px;
+}
+.insta_img img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+.content_item{
+  background-color: white;
+  padding:10px 15px;
+  font-size: 11px;
+  border: 2px solid #0F364A;
+  border-radius: 100px;
+  background-color: white;
+  transform: rotate(90deg);
+  margin-bottom: 32px;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,120 @@
     <title>#</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/front.css">
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="body">
+    <header>
+        <section class="header_container">
+            <div class="header_logo">
+                <img src="./img/header/header_icon_white.png" alt="">
+            </div>
+            <div class="icon_wrap">
+                <div class="openbtn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="insta_img">
+                    <img src="./img/header/icon_insta.png" alt="">
+                </div>
+                <div class="content_item flex-center fb block lh1 arial">
+                    <span>Contact</span>
+                </div>
+            </div>
+        </section>
+    </header>
 
+    <main>
+        <section class="fv_container">
+            <div class="fv_bg_left"></div>
+            <div class="fv_bg_right"></div>
+            <h2 class="f-36 block lh1.75 white fb zenkaku">みんながもっている<br>大切なことを<br>大事にしながら。</h2>
+            <div class="fv_item white">
+                <span class="f-15 block lh1 arial">News</span><span class="date f-15 block lh1">2024.5.25</span><span
+                    class="text f-15 block lh1">ウェブサイトオープンしました。</span>
+            </div>
+        </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <section class="lineup_container">
+            <h2 class="f-50 block mb-20">Line Up</h2>
+            <p class="f-15 block mb-60">コンセプトブランド</p>
+            <div class="sample_wrap">
+                <div class="sample_item">
+                    <div class="sample_img mb-20">
+                        <img class="img-cover" src="./img/top/lineup_house1.png" alt="">
+                    </div>
+                    <div class="title_img mb-20">
+                        <img class="img-contain" src="./img/top/lineup_title1.png" alt="">
+                    </div>
+                    <p class="f-20 pl-24">自遊に、くらす。</p>
+                </div>
+                <div class="sample_item mb-100">
+                    <div class="sample_img mb-20">
+                        <img class="img-cover" src="./img/top/lineup_house2.png" alt="">
+                    </div>
+                    <div class="title_img mb-20">
+                        <img class="img-contain" src="./img/top/lineup_title2.png" alt="">
+                    </div>
+                    <p class="f-20">天井高2.9mの家。</p>
+                </div>
+            </div>
+            </section>
+            <section class="comment_container">
+                <div class="text_item">
+                    <h3 class="f-26 block lh1.75 mb-50">
+                        みんながもっている<br>
+                        大切なことを<br>
+                        大事にしながら。
+                    </h3>
+                    <p class="f-16 block lh2">
+                        伊勢の空気。<br>
+                        時を彩る四季。<br>
+                        そこに住まう人の想い。<br>
+                        <br>
+                        家づくりとは<br>
+                        住まうこと、暮らすこと、生きることについての<br>
+                        大事なことを語り合うこと。<br>
+                        <br>
+                        家づくりとは<br>
+                        ひとりひとりにとっての本当に大切なことを<br>
+                        大事にできる場所を創ること。<br>
+                        <br>
+                        あなただけの「コンセプト」をデザインしよう。<br>
+                        家はあなたの大切な「コンセプト」から生まれてくる。<br>
+                    </p>
+                </div>
+                <div class="room_img">
+                    <img class="img-cover" src="./img/top/lineup_room.png" alt="">
+                </div>
+        </section>
+        <section class="team_container">
+            <div class="team_wrap">
+                <div class="icon_img mb-20">
+                    <img class="img-contain" src="./img/top/team_icon.png" alt="">
+                </div>
+                <h2 class="f-50 block white mb-20">Team</h2>
+                <p class="f-16 white">高橋建築の人と想い</p>
+            </div>
+            <div class="team_img">
+                <img class="img-cover" src="./img/top/team_img.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./scripts/main.js"></script>
 </body>
+
 </html>

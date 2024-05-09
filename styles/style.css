@@ -1,6 +1,9 @@
 body {
-    color: black;
+    color: #0F364A;
     height: 100vh;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-style: normal;
+    letter-spacing: 0.2em;
 }
 
 a {
@@ -31,7 +34,7 @@ img {
     object-fit: cover;
 }
 
-.img > img {
+.img>img {
     width: 100%;
     height: 100%;
 }
@@ -49,6 +52,7 @@ dl {
 .sp {
     display: none !important;
 }
+
 @media (max-width: 768px) {
     .sp {
         display: block !important;
@@ -74,3 +78,403 @@ dl {
     transform: translate(-50%, -50%);
 }
 
+.img-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* フォントサイズ */
+.f-10 {
+    font-size: clamp(10px, 0.71428vw, 22px);
+}
+
+.f-12 {
+    font-size: clamp(10px, 0.8571vw, 22px);
+}
+
+.f-14 {
+    font-size: clamp(10px, 1vw, 24px);
+}
+
+.f-16 {
+    font-size: clamp(10px, 1.14285vw, 26px);
+}
+
+.f-18 {
+    font-size: clamp(10px, 1.2857vw, 28px);
+}
+
+.f-20 {
+    font-size: clamp(10px, 1.42857vw, 30px);
+}
+
+.f-22 {
+    font-size: clamp(10px, 1.57142vw, 30px);
+}
+
+.f-24 {
+    font-size: clamp(10px, 1.71428vw, 34px);
+}
+
+.f-26 {
+    font-size: clamp(10px, 1.85714vw, 36px);
+}
+
+.f-28 {
+    font-size: clamp(10px, 2vw, 38px);
+}
+
+.f-30 {
+    font-size: clamp(10px, 2.14285vw, 40px);
+}
+
+.f-32 {
+    font-size: clamp(10px, 2.28571vw, 42px);
+}
+
+.f-36 {
+    font-size: clamp(10px, 2.57142vw, 46px);
+}
+
+.f-40 {
+    font-size: clamp(10px, 2.8571vw, 50px);
+}
+
+.f-45 {
+    font-size: clamp(10px, 3.21428vw, 55px);
+}
+
+.f-50 {
+    font-size: clamp(10px, 3.5714vw, 70px);
+}
+
+.f-60 {
+    font-size: clamp(10px, 4.2857vw, 70px);
+}
+
+@media (max-width: 768px) {
+    .f-10 {
+        font-size: 10px;
+    }
+
+    .f-12 {
+        font-size: 12px;
+    }
+
+    .f-14 {
+        font-size: 12px;
+    }
+
+    .f-16 {
+        font-size: 13px;
+    }
+
+    .f-18 {
+        font-size: 13px;
+    }
+
+    .f-20 {
+        font-size: 14px;
+    }
+
+    .f-22 {
+        font-size: 16px;
+    }
+
+    .f-24 {
+        font-size: 16px;
+    }
+
+    .f-26 {
+        font-size: 18px;
+    }
+
+    .f-28 {
+        font-size: 20px;
+    }
+
+    .f-30 {
+        font-size: 20px;
+    }
+
+    .f-32 {
+        font-size: 18px;
+    }
+
+    .f-36 {
+        font-size: 22px;
+    }
+
+    .f-40 {
+        font-size: 20px;
+    }
+
+    .f-45 {
+        font-size: clamp(10px, 12vw, 55px);
+    }
+
+    .f-50 {
+        font-size: 25px;
+    }
+
+    .f-60 {
+        font-size: 30px;
+    }
+}
+
+/* -----------------------------------------------
+マージン
+----------------------------------------------- */
+.mb-10 {
+    margin-bottom: 0.7812vw;
+}
+
+.mb-20 {
+    margin-bottom: 1.4285vw;
+}
+
+.mb-30 {
+    margin-bottom: 2.1428vw;
+}
+
+.mb-40 {
+    margin-bottom: 2.8571vw;
+}
+
+.mb-50 {
+    margin-bottom: 3.5714vw;
+}
+
+.mb-60 {
+    margin-bottom: 4.2857vw;
+}
+
+.mb-70 {
+    margin-bottom: 5vw;
+}
+
+.mb-80 {
+    margin-bottom: 5.7142vw;
+}
+
+.mb-100 {
+    margin-bottom: 7.1428vw;
+}
+
+@media (max-width: 768px) {
+    .mb-20 {
+        margin-bottom: 15px;
+    }
+
+    .mb-30 {
+        margin-bottom: 15px;
+    }
+
+    .mb-40 {
+        margin-bottom: 30px;
+    }
+
+    .mb-50 {
+        margin-bottom: 35px;
+    }
+
+    .mb-60 {
+        margin-bottom: 35px;
+    }
+
+    .mb-70 {
+        margin-bottom: 45px;
+    }
+
+    .mb-80 {
+        margin-bottom: 50px;
+    }
+
+    .mb-100 {
+        margin-bottom: 50px;
+    }
+}
+
+
+/* -----------------------------------------------
+line-hight
+----------------------------------------------- */
+.lh1 {
+    line-height: 1;
+}
+
+.lh1\.25 {
+    line-height: 1.25;
+}
+
+.lh1\.5 {
+    line-height: 1.5;
+}
+
+.lh1\.75 {
+    line-height: 1.75;
+}
+
+.lh2 {
+    line-height: 2;
+}
+
+
+/* -----------------------------------------------
+文字太さ
+----------------------------------------------- */
+.fb {
+    font-weight: 700;
+}
+
+.fsb {
+    font-weight: 600;
+}
+
+.fm {
+    font-weight: 500;
+}
+
+.fr {
+    font-weight: 400;
+}
+
+.fl {
+    font-weight: 300;
+}
+
+/* -----------------------------------------------
+文字位置
+----------------------------------------------- */
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tj {
+    text-align: justify;
+}
+
+/* -----------------------------------------------
+縦書き
+----------------------------------------------- */
+.ver {
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+    &.ver_part {
+        text-orientation: sideways;
+    }
+}
+
+/* -----------------------------------------------
+要素の位置指定
+----------------------------------------------- */
+.mc {
+    margin: auto;
+}
+
+.mxc {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myc {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mr {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.ml {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* -----------------------------------------------
+文字色
+----------------------------------------------- */
+.grey {
+    color: #949292;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: #0000EE;
+}
+
+
+/* -----------------------------------------------
+display要素
+----------------------------------------------- */
+.block {
+    display: block;
+}
+
+/* -----------------------------------------------
+  position要素
+  ----------------------------------------------- */
+.relative {
+    position: relative;
+}
+
+/* -----------------------------------------------
+  js要素
+  ----------------------------------------------- */
+.displayOn {
+    opacity: 1 !important;
+    z-index: 3;
+}
+
+.indexOn {
+    z-index: 120 !important;
+}
+
+/* -----------------------------------------------
+  font種類
+  ----------------------------------------------- */
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------------------------
+  font種類
+  ----------------------------------------------- */
+
+.pl-24{
+    padding-left: calc(24/1280 * 100vw);
+}
