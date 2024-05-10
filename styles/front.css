@@ -193,7 +193,6 @@ estateセクション
 .estate_item .label{
   padding: calc(10/1280 * 100vw) calc(45/1280 * 100vw) calc(10/1280 * 100vw) calc(35/1280 * 100vw);
   border-top-right-radius: 30px;
-  background-color: #A5BCBF;
   width: fit-content;
 }
 
@@ -242,6 +241,14 @@ estateセクション
 }
 .estate_card .price span:nth-child(3){
   margin-bottom: 2px;
+}
+
+.ready_built{
+  background-color: #A5BCBF;
+}
+
+.land{
+  background-color: #E0D1C2;
 }
 /* -----------------------------------------------
 teamセクション
