@@ -5,8 +5,8 @@ $(".openbtn").click(function () {
 
 function fadeAnime() {
   //ふわっと動く
-  $('.fadeUpTrigger').each(function () { 
-    var elemPos = $(this).offset().top + 80; 
+  $('.fadeUpTrigger').each(function () {
+    var elemPos = $(this).offset().top + 80;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
@@ -15,17 +15,17 @@ function fadeAnime() {
       $(this).removeClass('fadeUp');
     }
   });
-  
-  $('.fadeDownTrigger').each(function () { 
+
+  $('.fadeDownTrigger').each(function () {
     var elemPos = $(this).offset().top - 50;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
       $(this).addClass('fadeDown');
-      
+
     } else {
       $(this).removeClass('fadeDown');
-      
+
     }
   });
 }
@@ -64,4 +64,15 @@ $(function () {
       $('.onlytop').addClass('displayOn');
     }
   });
+});
+
+const swiper = new Swiper(".swiper",{
+  loop: true, //繰り返しをする
+  centeredSlides: true, //アクティブなスライドを中央に表示
+  slidesPerView: 3, //スライダーコンテナにスライドを3枚同時表示
+  speed: 600, //スライドの推移時間を600msに
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

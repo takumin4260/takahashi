@@ -25,6 +25,11 @@
   display: none;
 }
 
+a:hover{
+  opacity: 0.8;
+  transition: all .5s ease;
+}
+
 /* -----------------------------------------------
 fvセクション
 ----------------------------------------------- */
@@ -314,21 +319,29 @@ newsセクション
 galleryセクション
 ----------------------------------------------- */
 .gallery_container{
-  padding: calc(114/1280 * 100vw) 0;
+  padding: calc(114/1280 * 100vw) calc(90/1280 * 100vw);
 }
 
-.gallery_wrap{
-  width: fit-content;
-  display: flex;
+.swiper-wrapper{
+  margin-left: -1%;
+  position: relative;
 }
 
-.gallery_item{
-  padding: calc(80/1280 * 100vw) calc(33/1280 * 100vw);
-  width: fit-content;
+.swiper-slide{
+  width: 33.5% !important;
   border: 1px solid #0F364A;
 }
 
-.gallery_item .gallery_img{
+.swiper-slide .gallery_item{
+  padding: calc(80/1280 * 100vw) calc(33/1280 * 100vw);
+  position: relative;
+  transition: all .5s ease;
+}
+.swiper-slide .gallery_item:hover{
+  background-color: #c5d1d7;
+}
+
+.swiper-slide .gallery_img{
   width: calc(300/1280 * 100vw);
   height: calc(300/1280 * 100vw);
   position: relative;
@@ -336,11 +349,53 @@ galleryセクション
   border-radius: 20px;
 }
 
-.gallery_item .gallery_no{
+.swiper-slide .gallery_no{
   padding: 5px calc(15/1280 * 100vw);
   border: 1px solid #0F364A;
   border-radius: 100px;
   width: fit-content;
+}
+
+/* -----------------------------------------------
+スワイパー
+----------------------------------------------- */
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+}
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after{
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+  z-index: 10;
+  position: absolute;
+  margin-left: 4vw;
+}
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+  z-index: 10;
+  position: absolute;
+  margin-right: 4vw;
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-image: url(../img/top/gallery_pre.png);
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  background-image: url(../img/top/gallery_next.png);
 }
 
 
