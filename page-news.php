@@ -26,6 +26,5 @@
     </div>
   </a>
 </div>
-<p>②<span>273.74<span>㎡（82.81坪）</p>
 
 <?php get_footer(); ?>

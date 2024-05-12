@@ -1,0 +1,53 @@
+.news_container {
+  padding: calc(200/1280 * 100vw) calc(100/1280 * 100vw) calc(100/1280 * 100vw);
+  background-image: url("../img/top/estate_bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #D7E1DE;
+  background-position: center center;
+}
+
+.news_wrap {
+  width: calc(890/1280 * 100vw);
+}
+
+.news_wrap .news_items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #707070;
+}
+
+.news_wrap .news_items:last-child {
+  border-bottom: 1px solid #707070;
+}
+
+.news_wrap .news_img {
+  width: calc(100/1280 * 100vw);
+  height: calc(95/1280 * 100vw);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: calc(20/1280 * 100vw) calc(80/1280 * 100vw) calc(20/1280 * 100vw) calc(23/1280 * 100vw);
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .news_container {
+    padding: 24vw 0;
+  }
+
+  .news_wrap {
+    width: 100%;
+  }
+
+  .news_wrap .news_img {
+    width: 20vw;
+    height: 20vw;
+    margin: 4vw 13vw 4vw 7vw;
+  }
+
+  .news_contents {
+    margin-right: 5vw;
+  }
+}

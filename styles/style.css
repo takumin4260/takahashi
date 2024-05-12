@@ -481,3 +481,50 @@ display要素
 .pl-24{
     padding-left: calc(24/1280 * 100vw);
 }
+
+/* -----------------------------------------------
+共通パーツ
+----------------------------------------------- */
+
+.more_button {
+    padding: calc(20/1280 * 100vw) calc(45/1280 * 100vw);
+    background-color: #0F364A;
+    width: calc(300/1280 * 100vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+  }
+  
+  .more_button .arrow_img {
+    width: calc(78/1280 * 100vw);
+    height: calc(10/1280 * 100vw);
+    position: relative;
+  }
+  
+  .onlytop {
+    display: none;
+  }
+  
+  .common {
+    display: none;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+    transition: all .5s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .more_button {
+      padding: calc(40/1280 * 100vw) calc(65/1280 * 100vw);
+      width: calc(700/1280 * 100vw);
+    }
+  
+    .more_button .arrow_img {
+      width: calc(188/1280 * 100vw);
+      height: calc(30/1280 * 100vw);
+    }
+  }
+
+  

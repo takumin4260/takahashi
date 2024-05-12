@@ -1,49 +1,4 @@
 /* -----------------------------------------------
-共通パーツ
------------------------------------------------ */
-
-.more_button {
-  padding: calc(20/1280 * 100vw) calc(45/1280 * 100vw);
-  background-color: #0F364A;
-  width: calc(300/1280 * 100vw);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 100px;
-}
-
-.more_button .arrow_img {
-  width: calc(78/1280 * 100vw);
-  height: calc(10/1280 * 100vw);
-  position: relative;
-}
-
-.onlytop {
-  display: none;
-}
-
-.common {
-  display: none;
-}
-
-a:hover {
-  opacity: 0.8;
-  transition: all .5s ease;
-}
-
-@media (max-width: 768px) {
-  .more_button {
-    padding: calc(40/1280 * 100vw) calc(65/1280 * 100vw);
-    width: calc(700/1280 * 100vw);
-  }
-
-  .more_button .arrow_img {
-    width: calc(188/1280 * 100vw);
-    height: calc(30/1280 * 100vw);
-  }
-}
-
-/* -----------------------------------------------
 fvセクション
 ----------------------------------------------- */
 .fv_container {
@@ -418,6 +373,7 @@ estateセクション
 
   .estate_card .info_item .address {
     padding-bottom: calc(30/1280 * 100vw);
+    align-items: start;
   }
 
   .estate_card .info_item .address .pin {
@@ -611,10 +567,10 @@ galleryセクション
   font-size: 4.5vw;
 }
 .swiper-button-next::after {
-  margin-right: 0vw;
+  margin-right: 0vw !important;
 }
 .swiper-button-prev::after {
-  margin-left: 0vw;
+  margin-left: 0vw !important;
 }
 
 }

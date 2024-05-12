@@ -1,0 +1,75 @@
+
+/* -----------------------------------------------
+galleryセクション
+----------------------------------------------- */
+.gallery_container {
+  padding: calc(200/1280 * 100vw) calc(80/1280 * 100vw) calc(100/1280 * 100vw);
+  background-image: url("../img/top/estate_bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #D7E1DE;
+  background-position: center center;
+}
+
+.gallery_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.gallery_outline {
+  padding: calc(80/1280 * 100vw) calc(33/1280 * 100vw);
+  position: relative;
+  transition: all .5s ease;
+  border: 0.5px solid #0F364A;
+  width: calc(100%/3 - 68/1280 * 100vw);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.gallery_outline:nth-child(3n-2){
+  border-left: none;
+}
+.gallery_outline:nth-child(3n){
+  border-right: none;
+}
+
+.gallery_item{
+  width: 100%;
+  height: fit-content;
+}
+
+.gallery_outline:hover {
+  background: rgba(15, 54, 74, 0.2);
+}
+
+.gallery_img {
+  width: 100%;
+  height: calc(300/1280 * 100vw);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.gallery_no {
+  padding: 5px calc(15/1280 * 100vw);
+  border: 1px solid #0F364A;
+  border-radius: 100px;
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .gallery_container {
+    padding: 20vw 0;
+}
+.gallery_img {
+  width: 81vw;
+  height: 81vw;
+}
+.gallery_item {
+  padding: calc(160/1280 * 100vw) calc(128/1280 * 100vw);
+}
+.gallery_container .f-18 {
+  font-size: 4.5vw;
+}
+}

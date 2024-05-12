@@ -59,11 +59,11 @@
 }
 
 @media (max-width: 768px) {
-  .foot_container_sp{
-    padding: calc(80/1280 * 100vw) 0 calc(45/1280 * 100vw) calc(100/1280 * 100vw);
+  .foot_container_sp {
     background-color: #BEC1BD;
     position: relative;
-  }
+    padding: 13vw 10vw;
+}
   .link_wrap{
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@
 }
   .scroll_wrap{
     position: absolute;
-    bottom: 6vw;
+    bottom: 14vw;
     right: 5vw;
   }
 }

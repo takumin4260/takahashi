@@ -51,19 +51,24 @@ btn.addEventListener("click", () => {
   });
 });
 
-//ヘッダースクロール時の表示制御
+//スクロール時のヘッダーの色表示制御
 $(function () {
-  $(".onlytop").addClass("displayOn");
+  // `fv_container` がページに存在するか確認
+  if ($('.fv_container').length > 0) {
+    $(".onlytop").addClass("displayOn");
 
-  $(window).on('scroll', function () {
-    if ($('.fv_container').height() < $(this).scrollTop()) {
-      $('.common').addClass('displayOn');
-      $('.onlytop').removeClass('displayOn');
-    } else {
-      $('.common').removeClass('displayOn');
-      $('.onlytop').addClass('displayOn');
-    }
-  });
+    $(window).on('scroll', function () {
+      if ($('.fv_container').height() < $(this).scrollTop()) {
+        $('.common').addClass('displayOn');
+        $('.onlytop').removeClass('displayOn');
+      } else {
+        $('.common').removeClass('displayOn');
+        $('.onlytop').addClass('displayOn');
+      }
+    });
+  }else{
+    $(".common").addClass("displayOn");
+  }
 });
 
 const swiper = new Swiper(".swiper",{
@@ -78,18 +83,9 @@ const swiper = new Swiper(".swiper",{
   pagination: {
     el: ".swiper-pagination",
   },
+  breakpoints: {
+    769: { // 768px以上の画面幅で適用
+      slidesPerView: 3 // スライダーコンテナにスライドを3枚同時表示
+    }
+  }
 });
-
-// const swiper = new Swiper(".swiper",{
-//   loop: true, //繰り返しをする
-//   centeredSlides: true, //アクティブなスライドを中央に表示
-//   slidesPerView: 3, //スライダーコンテナにスライドを3枚同時表示
-//   speed: 600, //スライドの推移時間を600msに
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-// });
