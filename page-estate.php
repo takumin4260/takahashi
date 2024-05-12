@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<!--上のget headerの部分で style.cssの読み込んでいるはずなのに反映されない。class名の指定の仕方が間違っているかを見てほしい
+あとは全体的に、ここはこういう風にやった方がいいみたいなのがあったら教えてほしい。
+特にcontents_wrapの部分
+-->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/estate.css">
 <main>
     <section class="info">
