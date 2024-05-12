@@ -1,0 +1,46 @@
+/* -----------------------------------------------
+共通パーツ
+----------------------------------------------- */
+.more_button{
+  padding: calc(20/1280 * 100vw)  calc(45/1280 * 100vw);
+  background-color: #0F364A;
+  width: calc(300/1280 * 100vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+}
+.more_button .arrow_img{
+  width: calc(78/1280 * 100vw);
+  height: calc(10/1280 * 100vw);
+  position: relative;
+}
+
+/* -----------------------------------------------
+mainセクション
+----------------------------------------------- */
+.main_container{
+  padding: calc(300/1280 * 100vw) calc(135/1280 * 100vw) calc(140/1280 * 100vw);
+  background-image: url("../img/top/estate_bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #D7E1DE;
+  background-position: center center;
+}
+.title_wrap{
+  padding-left: calc(33/1280 * 100vw);
+  border-bottom: 1px solid #0F364A;
+}
+.title_wrap h2{
+  margin-bottom:  calc(35/1280 * 100vw);
+}
+
+.contents_wrap{
+  padding-left:  calc(40/1280 * 100vw);
+  padding-right:  calc(40/1280 * 100vw);
+}
+.content_img{
+  width:  calc(875/1280 * 100vw);
+  height:  calc(500/1280 * 100vw);
+  position: relative;
+}

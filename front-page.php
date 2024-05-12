@@ -6,7 +6,8 @@
         <div class="fv_bg_right"></div>
         <h2 class="f-36 block lh1.75 white fb zenkaku">みんながもっている<br>大切なことを<br>大事にしながら。</h2>
         <div class="fv_item white">
-            <span class="f-15 block lh1 arial">News</span><span class="date f-15 block lh1">2024.5.25</span><span class="text f-15 block lh1">ウェブサイトオープンしました。</span>
+            <div class="news"><span class="f-16 block lh1 arial">News</span></div>
+            <div class="fv_span"><span class="date f-16 block lh1">2024.5.25</span><span class="text f-16 block lh1">ウェブサイトオープンしました。</span></div>
         </div>
         <div class="fv_mark_outline">
             <div class="fv_mark flash">
@@ -43,7 +44,7 @@
             </a>
         </div>
     </section>
-    <section class="comment_container fadeUpTrigger">
+    <section class="comment_container fadeUpTrigger pc">
         <div class="text_item">
             <h3 class="f-26 block lh1.75 mb-50">
                 みんながもっている<br>
@@ -70,6 +71,31 @@
         <div class="room_img">
             <img class="img-cover" src="<?php echo get_template_directory_uri(); ?>/img/top/lineup_room.png" alt="">
         </div>
+    </section>
+    <section class="comment_container fadeUpTrigger sp">
+        <div class="text_item">
+            <h3 class="f-26 block lh1.75">
+                みんながもっている<br>
+                大切なことを<br>
+                大事にしながら。
+            </h3>
+            <div class="room_img">
+                <img class="img-cover" src="<?php echo get_template_directory_uri(); ?>/img/top/lineup_room.png" alt="">
+            </div>
+            <p class="f-16 block lh2">
+                伊勢の空気。<br>
+                時を彩る四季。<br>
+                そこに住まう人の想い。
+            </p>
+        </div>
+        <a href="">
+            <div class="more_button">
+                <span class="f-20 block white arial lh1">続きを読む</span>
+                <div class="arrow_img">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/news_arrow.png" alt="">
+                </div>
+            </div>
+        </a>
     </section>
     <section class="estate_container fadeUpTrigger">
         <h2 class="f-50 block mb-20 tc">Estate</h2>
@@ -101,7 +127,7 @@
                                 <div class="pin">
                                     <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/estate_pin.png" alt="">
                                 </div>
-                                <p class="f-14 block">三重県伊勢市小俣町湯田964-1</p>
+                                <p class="f-14 block lh1.5">三重県伊勢市<br class="sp">小俣町湯田964-1</p>
                             </div>
                         </div>
                         <div class="price">
@@ -125,7 +151,7 @@
                                 <div class="pin">
                                     <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/estate_pin.png" alt="">
                                 </div>
-                                <p class="f-14 block">三重県伊勢市小俣町湯田964-1</p>
+                                <p class="f-14 block lh1.5">三重県伊勢市<br class="sp">小俣町湯田964-1</p>
                             </div>
                         </div>
                         <div class="price">
@@ -149,7 +175,7 @@
                                 <div class="pin">
                                     <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/estate_pin.png" alt="">
                                 </div>
-                                <p class="f-14 block">三重県伊勢市小俣町湯田964-1</p>
+                                <p class="f-14 block lh1.5">三重県伊勢市<br class="sp">小俣町湯田964-1</p>
                             </div>
                         </div>
                         <div class="price">
@@ -173,7 +199,7 @@
                                 <div class="pin">
                                     <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/estate_pin.png" alt="">
                                 </div>
-                                <p class="f-14 block">三重県伊勢市小俣町湯田964-1</p>
+                                <p class="f-14 block lh1.5">三重県伊勢市<br class="sp">小俣町湯田964-1</p>
                             </div>
                         </div>
                         <div class="price">
@@ -197,7 +223,7 @@
                                 <div class="pin">
                                     <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/estate_pin.png" alt="">
                                 </div>
-                                <p class="f-14 block">三重県伊勢市小俣町湯田964-1</p>
+                                <p class="f-14 block lh1.5">三重県伊勢市<br class="sp">小俣町湯田964-1</p>
                             </div>
                         </div>
                     </div>
@@ -218,7 +244,7 @@
                                 <div class="pin">
                                     <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/estate_pin.png" alt="">
                                 </div>
-                                <p class="f-14 block">三重県伊勢市小俣町湯田964-1</p>
+                                <p class="f-14 block lh1.5">三重県伊勢市<br class="sp">小俣町湯田964-1</p>
                             </div>
                         </div>
                     </div>
@@ -239,16 +265,28 @@
             <div class="icon_img mb-20">
                 <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/team_icon.png" alt="">
             </div>
-            <h2 class="f-50 block white mb-20">Team</h2>
-            <p class="f-16 white">高橋建築の人と想い</p>
+            <div class="team_title">
+                <h2 class="f-50 block white mb-20">Team</h2>
+                <p class="f-16 white">高橋建築の人と想い</p>
+            </div>
         </div>
         <div class="team_img">
             <img class="img-cover" src="<?php echo get_template_directory_uri(); ?>/img/top/team_img.png" alt="">
         </div>
+        <div class="sp">
+            <a href="">
+                <div class="more_button mxc">
+                    <span class="f-20 block arial lh1">View More</span>
+                    <div class="arrow_img">
+                        <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/top/team_arrow_white.png" alt="">
+                    </div>
+                </div>
+            </a>
+        </div>
     </section>
     <section class="news_container fadeUpTrigger">
         <h2 class="f-50 block tc mb-10">News & Blog</h2>
-        <p class="f-15 block tc mb-60">ニュース＆ブログ</p>
+        <p class="f-16 block tc mb-60">ニュース＆ブログ</p>
         <div class="news_wrap mxc mb-80">
             <a href="">
                 <div class="news_items">
@@ -295,7 +333,6 @@
                 </div>
             </a>
         </div>
-
         <a href="">
             <div class="more_button mxc">
                 <span class="f-20 block white arial lh1">View More</span>
@@ -374,6 +411,7 @@
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
 
         <a href="">
             <div class="more_button mxc">

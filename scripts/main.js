@@ -69,10 +69,27 @@ $(function () {
 const swiper = new Swiper(".swiper",{
   loop: true, //繰り返しをする
   centeredSlides: true, //アクティブなスライドを中央に表示
-  slidesPerView: 3, //スライダーコンテナにスライドを3枚同時表示
+  slidesPerView: 1, //スライダーコンテナにスライドを3枚同時表示
   speed: 600, //スライドの推移時間を600msに
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
+
+// const swiper = new Swiper(".swiper",{
+//   loop: true, //繰り返しをする
+//   centeredSlides: true, //アクティブなスライドを中央に表示
+//   slidesPerView: 3, //スライダーコンテナにスライドを3枚同時表示
+//   speed: 600, //スライドの推移時間を600msに
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });

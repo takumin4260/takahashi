@@ -7,9 +7,9 @@ body {
 }
 
 a {
-    color: black;
     text-decoration: none;
     display: block;
+    color:inherit
 }
 
 p {
@@ -61,7 +61,7 @@ dl {
 
 @media (max-width: 768px) {
     .pc {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -172,15 +172,15 @@ dl {
     }
 
     .f-12 {
-        font-size: 12px;
+        font-size: 2.7vw;
     }
 
     .f-14 {
-        font-size: 12px;
+        font-size: 3vw;
     }
 
     .f-16 {
-        font-size: 13px;
+        font-size: 3.3vw;
     }
 
     .f-18 {
@@ -188,19 +188,19 @@ dl {
     }
 
     .f-20 {
-        font-size: 14px;
+        font-size: 4vw;
     }
 
     .f-22 {
-        font-size: 16px;
+        font-size: 4.1vw;
     }
 
     .f-24 {
-        font-size: 16px;
+        font-size: 4.2vw;
     }
 
     .f-26 {
-        font-size: 18px;
+        font-size: 4.6vw;
     }
 
     .f-28 {
@@ -212,11 +212,11 @@ dl {
     }
 
     .f-32 {
-        font-size: 18px;
+        font-size: 4.7vw;
     }
 
     .f-36 {
-        font-size: 22px;
+        font-size: 5vw;
     }
 
     .f-40 {
@@ -228,7 +228,7 @@ dl {
     }
 
     .f-50 {
-        font-size: 25px;
+        font-size: 9vw;
     }
 
     .f-60 {
@@ -276,8 +276,11 @@ dl {
 }
 
 @media (max-width: 768px) {
+    .mb-10 {
+        margin-bottom: 1.812vw;
+    }
     .mb-20 {
-        margin-bottom: 15px;
+        margin-bottom: 4vw;
     }
 
     .mb-30 {
@@ -289,11 +292,11 @@ dl {
     }
 
     .mb-50 {
-        margin-bottom: 35px;
+        margin-bottom: 15vw;
     }
 
     .mb-60 {
-        margin-bottom: 35px;
+        margin-bottom: 18vw;
     }
 
     .mb-70 {

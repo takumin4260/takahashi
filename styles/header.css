@@ -126,3 +126,29 @@
   transform: rotate(90deg);
   margin-bottom: 32px;
 }
+
+@media (max-width: 768px) {
+  .icon_wrap{
+    right: calc(-24/1280 * 100vw);
+  }
+  .header_logo {
+    width: 31vw;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .openbtn {
+    margin-bottom: 16px;
+}
+.insta_img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 50px;
+}
+.content_item {
+  padding: 7px 11px;
+  font-size: 11px;
+}
+}
