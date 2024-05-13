@@ -1,0 +1,133 @@
+/* -----------------------------------------------
+共通パーツ
+----------------------------------------------- */
+
+
+/* -----------------------------------------------
+info section
+----------------------------------------------- */
+.info {
+    background-image: url("../img/top/estate_bg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #D7E1DE;
+    background-position: center center;
+    padding: calc(160/1280 * 100vw) calc(110/1280 * 100vw) calc(95/1280 * 100vw);
+}
+
+.label_wrap {
+    padding: calc(10/1280 * 100vw) calc(45/1280 * 100vw) calc(10/1280 * 100vw) calc(35/1280 * 100vw);
+    border-top-right-radius: 30px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.ready_built{
+    background-color: #A5BCBF;
+  }
+
+.land{
+    background-color: #E0D1C2;
+  }
+
+.info_container {
+  margin-bottom: calc(40/1280 * 100vw);
+}
+
+.contents_wrap {
+    display:flex;
+    padding-bottom:calc(87/1280 * 100vw);
+    width: calc(1060/1280 * 100vw);
+    border-bottom: 0.5px solid #0F364A;
+  }
+
+.info_box {
+    flex:auto;
+    padding-right: calc(64/1280 * 100vw);
+}
+
+.category {
+  min-width: calc(90/1280 * 100vw);
+}
+
+.tag_item {
+    display:flex;
+  }
+
+.info_item {
+    display: flex;
+    border-bottom: 0.5px solid #0F364A;
+    width: calc(464/1280 * 100vw);
+    padding: calc(22/1280 * 100vw) 0;
+  }
+
+  .info_item_bigger {
+    border-bottom: 0.5px solid #0F364A;
+    width: calc(464/1280 * 100vw);
+    padding: calc(38/1280 * 100vw) 0;
+  }
+
+ .img_box {
+    flex:auto;
+    padding: calc(38/1280 * 100vw) calc(19/1280 * 100vw) 0 0;
+ }
+ .img_item {
+    width: calc(500/1280 * 100vw);
+    height: calc(440/1280 * 100vw);
+    margin-bottom: calc(15/1280 * 100vw);
+    position: relative;
+    overflow: hidden;
+ }
+ .img-contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.img-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image_container {
+  width: calc(1060/1280 * 100vw);
+  margin-bottom: calc(151/1280 * 100vw);
+}
+
+.image_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+}
+
+.image_box {
+  flex:auto;
+  width: calc(250/1280 * 100vw);
+  height: calc(190/1280 * 100vw);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: calc(35/1280 * 100vw);
+}
+
+.contact_button{
+  padding: calc(20/1280 * 100vw)  calc(45/1280 * 100vw);
+  background-color: #0F364A;
+  width: calc(300/1280 * 100vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+}
+.contact_button .arrow_img{
+  width: calc(78/1280 * 100vw);
+  height: calc(10/1280 * 100vw);
+  position: relative;
+}
