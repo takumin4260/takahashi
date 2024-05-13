@@ -20,7 +20,7 @@
                     </div>
                     <div class="info_item">
                         <div class="info_category address">
-                            <p class="f-12">物件概要</p>
+                            <p class="category f-12 block block">物件概要</p>
                         </div>
                         <div class="info_content">
                             <span class="f-12">土地＋建物</span>
@@ -28,7 +28,7 @@
                     </div>
                     <div class="info_item">
                         <div class="info_category">
-                            <p class="f-12">物件概要</p>
+                            <p class="category f-12 block block">物件概要</p>
                         </div>
                         <div class="info_content">
                             <span class="f-12">土地＋建物</span>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="info_item">
                         <div class="info_category">
-                            <p class="f-12">土地面積</p>
+                            <p class="category f-12 block block">土地面積</p>
                         </div>
                         <div class="info_content">
                             <span class="f-12">②273.74㎡（82.81坪）</span>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="info_item">
                         <div class="info_category">
-                            <p class="f-12">建物面積</p>
+                            <p class="category f-12 block">建物面積</p>
                         </div>
                         <div class="info_content">
                             <span class="f-12">②273.74㎡（82.81坪）</span>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="info_item">
                         <div class="info_category">
-                            <p class="f-12">価格</p>
+                            <p class="category f-12 block">価格</p>
                         </div>
                         <div class="info_content">
                             <span class="f-12">②2,240万円</span>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="info_item">
                         <div class="info_category">
-                            <p class="f-12">交通</p>
+                            <p class="category f-12 block">交通</p>
                         </div>
                         <div class="info_content">
                             <span class="f-12">伊勢電鉄「〇〇駅」徒歩10分</span>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="info_item_bigger">
                         <div class="info_category">
-                            <p class="f-12">物件概要</p>
+                            <p class="f-12 block mb-14">物件概要</p>
                         </div>
                         <ul>
                             <span class="f-12">
@@ -101,18 +101,51 @@
                     
                 </div>
                 <div class="img_box">
+                    <!--画像が変に切れないようにするためにcontainにしているけど、左寄せにしたい-->
                     <div class="img_item">
                         <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house.png" alt="">
                     </div>
                     <div class="img_item">
-                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house.png" alt="">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_display.png" alt="">
                     </div>
                 </div>
             </div>
             
         </div>
         <div class="image_container">
-            
+            <p class="f-13 block mb-23">画像一覧</p>
+            <div class="image_wrap">
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+                <div class="image_box">
+                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_inner.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="contact_button mxc">
+            <span class="f-20 block white arial lh1">Contact</span>
+            <div class="arrow_img">
+                <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/news_arrow.png" alt="">
+            </div>
         </div>
     </section>
 

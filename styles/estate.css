@@ -12,7 +12,7 @@ info section
     background-repeat: repeat;
     background-color: #D7E1DE;
     background-position: center center;
-    padding: 160px calc(110/1280 * 100vw);
+    padding: calc(160/1280 * 100vw) calc(110/1280 * 100vw) calc(95/1280 * 100vw);
 }
 
 .label_wrap {
@@ -44,6 +44,10 @@ info section
 .info_box {
     flex:auto;
     padding-right: calc(64/1280 * 100vw);
+}
+
+.category {
+  min-width: calc(90/1280 * 100vw);
 }
 
 .tag_item {
@@ -92,6 +96,38 @@ info section
   height: 100%;
   object-fit: cover;
 }
-.image-cotainer {
+.image_container {
   width: calc(1060/1280 * 100vw);
+  margin-bottom: calc(151/1280 * 100vw);
+}
+
+.image_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+}
+
+.image_box {
+  flex:auto;
+  width: calc(250/1280 * 100vw);
+  height: calc(190/1280 * 100vw);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: calc(35/1280 * 100vw);
+}
+
+.contact_button{
+  padding: calc(20/1280 * 100vw)  calc(45/1280 * 100vw);
+  background-color: #0F364A;
+  width: calc(300/1280 * 100vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+}
+.contact_button .arrow_img{
+  width: calc(78/1280 * 100vw);
+  height: calc(10/1280 * 100vw);
+  position: relative;
 }
