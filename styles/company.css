@@ -1,7 +1,6 @@
 .company_container{
   padding: calc(100/1280 * 100vw) calc(180/1280 * 100vw) calc(100/1280 * 100vw);
   background-image: url("../img/top/estate_bg.png");
-  background-size: cover;
   background-repeat: repeat;
   background-color: #D7E1DE;
   background-position: center center;
@@ -18,13 +17,11 @@
 
 }
 .company_table th {
-  font-weight: bold;
   width: 28%;
   text-align: start;
   padding-left: calc(15/1280 * 100vw);
 }
 .company_table td {
-  font-weight: bold;
   width: 72%;
 }
 .company_table tr {

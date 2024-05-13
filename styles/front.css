@@ -32,17 +32,20 @@ fvセクション
   opacity: 0.7;
 }
 
-.fv_container h2 {
+.fv_wrap{
   position: absolute;
-  left: calc(60/1280 * 100vw);
-  top: calc(400/1280 * 100vw);
+  bottom: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+}
+
+.fv_container h2 {
+  margin-left: calc(60/1280 * 100vw);
   letter-spacing: 0.3em;
 }
 
 .fv_container .fv_item {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   padding: calc(13/1280 * 100vw) calc(30/1280 * 100vw);
   display: flex;
   align-items: center;
@@ -90,7 +93,7 @@ fvセクション
   }
 
   .fv_container .fv_item {
-    width: calc(100% - 6vw);
+    width: calc(100vw - 6vw);
     flex-flow: column;
     align-items: start;
     padding: 4vw 3vw;
@@ -121,6 +124,9 @@ fvセクション
 
   .fv-container.f-36 {
     font-size: 41px;
+  }
+  .fv_wrap .mb-40{
+    margin-bottom: 3vw !important;
   }
 }
 @media (max-width: 480px) {
@@ -166,6 +172,9 @@ lineupセクション
 }
 
 @media (max-width: 768px) {
+  .lineup_container {
+    padding: 0 calc(30/375 * 100vw);
+  }
   .sample_wrap {
     flex-flow: column;
   }
@@ -175,7 +184,7 @@ lineupセクション
   }
 
   .sample_wrap .sample_img {
-    width: 79vw;
+    width: 83.5vw;
     height: 48vw;
     border-radius: 8vw;
   }
@@ -188,11 +197,6 @@ lineupセクション
   .pl-24 {
     padding-left: 10vw;
   }
-
-  .mb-40 {
-    margin-bottom: 75px;
-  }
-
 }
 
 /* -----------------------------------------------
@@ -205,7 +209,6 @@ commentセクション
   justify-content: space-between;
   align-items: center;
   background-image: url("../img/top/lineup_bg.png");
-  background-size: cover;
   background-repeat: repeat;
   background-color: #BEC1BD;
   background-position: center center;
@@ -222,6 +225,33 @@ commentセクション
   border-radius: 40px;
   border: 10px solid white;
   overflow: hidden;
+}
+
+.readmore:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: block;
+  background: url(../img/top/readmore.png) no-repeat center;
+  background-size: contain;
+  transition: .3s;
+  transform: rotate(90deg);
+}
+.readmore.on-click:after {
+  transform: rotate(270deg);
+}
+.readmore .open {
+  display: block;
+}
+.readmore.on-click .open {
+  display: none;
+}
+.readmore .close {
+  display: none;
+}
+.readmore.on-click .close {
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -251,7 +281,6 @@ estateセクション
 .estate_container {
   padding: calc(100/1280 * 100vw) calc(130/1280 * 100vw);
   background-image: url("../img/top/estate_bg.png");
-  background-size: cover;
   background-repeat: repeat;
   background-color: #D7E1DE;
   background-position: center center;
@@ -456,7 +485,6 @@ newsセクション
 .news_container {
   padding: calc(100/1280 * 100vw);
   background-image: url("../img/top/lineup_bg.png");
-  background-size: cover;
   background-repeat: repeat;
   background-color: #BEC1BD;
   background-position: center center;
@@ -553,6 +581,9 @@ galleryセクション
   .gallery_container {
     padding: 20vw 0;
 }
+.swiper-wrapper {
+  margin-left: -2%;
+}
 .swiper-slide {
   width: 101% !important;
 }
@@ -572,8 +603,11 @@ galleryセクション
 .swiper-button-prev::after {
   margin-left: 0vw !important;
 }
-
+.swiper-slide .gallery_no {
+  padding: 8px calc(30/1280 * 100vw);
 }
+}
+
 /* -----------------------------------------------
 スワイパー
 ----------------------------------------------- */
@@ -640,6 +674,41 @@ galleryセクション
   }
 
 
+@media (max-width: 480px) {
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 37px;
+  margin: auto;
+  width: 37px;
+  z-index: 10;
+  position: absolute;
+  margin-left: 4vw;
+}
+
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 37px;
+  margin: auto;
+  width: 37px;
+  z-index: 10;
+  position: absolute;
+  margin-right: 4vw;
+}
+.swiper-button-next::after {
+  margin-right: -2vw !important;
+}
+.swiper-button-prev::after {
+  margin-left: -2vw !important;
+}
+
+}
+
 
 /* -----------------------------------------------
 voiceセクション
@@ -647,7 +716,6 @@ voiceセクション
 .voice_container {
   padding: calc(117/1280 * 100vw) calc(150/1280 * 100vw) calc(143/1280 * 100vw) calc(150/1280 * 100vw);
   background-image: url("../img/top/voice_bg.png");
-  background-size: cover;
   background-repeat: repeat;
   background-color: #D7E1DE;
   background-position: center center;

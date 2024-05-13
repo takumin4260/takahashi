@@ -2,13 +2,13 @@
   <div class="pc">
     <div class="foot_container">
       <div class="address_wrap">
-        <p class="f-22 block mb-30">株式会社高橋建築</p>
-        <p class="f-22 block mb-20 lh1.5">〒519-0506<br>三重県伊勢市小俣町湯田964-1</p>
+        <p class="f-22 block fm mb-30">株式会社高橋建築</p>
+        <p class="f-22 block mb-20 lh1.5 fm">〒519-0506<br>三重県伊勢市小俣町湯田964-1</p>
         <a href="">
-          <p class="f-20 block mb-30">Google Map</p>
+          <p class="f-20 block mb-30 b-bottom lh1.5 fit">Google Map</p>
         </a>
         <a href="">
-          <p class="f-22 block">TEL.0596-22-9467</p>
+          <p class="f-22 block fm">TEL.0596-22-9467</p>
         </a>
       </div>
       <div class="foot_items">
@@ -35,13 +35,13 @@
   <div class="sp">
     <div class="foot_container_sp">
       <div class="address_wrap">
-        <p class="f-22 block mb-30">株式会社高橋建築</p>
-        <p class="f-22 block mb-20 lh1.5">〒519-0506<br>三重県伊勢市小俣町湯田964-1</p>
+        <p class="f-22 block fm mb-30">株式会社高橋建築</p>
+        <p class="f-22 block mb-20 lh1.5 fm">〒519-0506<br>三重県伊勢市小俣町湯田964-1</p>
         <a href="">
-          <p class="f-20 block mb-20">Google Map</p>
+          <p class="f-20 block mb-20 b-bottom lh1.5 fit">Google Map</p>
         </a>
         <a href="">
-          <p class="f-22 block mb-20">TEL.0596-22-9467</p>
+          <p class="f-22 block mb-20 fm">TEL.0596-22-9467</p>
         </a>
       </div>
       <div class="link_wrap">

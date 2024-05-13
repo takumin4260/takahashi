@@ -3,8 +3,8 @@
 
 <div class="main_container">
   <div class="title_wrap mb-60">
-    <p class="f-14 block mb-20">2024.6.1</p>
-    <h2 class="f-22 block">WEBサイトが新しくなりました。</h2>
+    <p class="f-14 block mb-20 fm">2024.6.1</p>
+    <h2 class="f-22 block fm">WEBサイトが新しくなりました。</h2>
   </div>
   <div class="contents_wrap mb-80">
     <p class="f-14 block mb-60 lh2">

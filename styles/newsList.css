@@ -1,7 +1,6 @@
 .news_container {
   padding: calc(200/1280 * 100vw) calc(100/1280 * 100vw) calc(100/1280 * 100vw);
   background-image: url("../img/top/estate_bg.png");
-  background-size: cover;
   background-repeat: repeat;
   background-color: #D7E1DE;
   background-position: center center;

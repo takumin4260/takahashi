@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/gallery.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/galleryList.css">
 <main>
   <section class="gallery_container">
-    <h2 class="f-50 block tc mb-10">Gallery</h2>
+    <h2 class="f-50 block tc fm mb-20">Gallery</h2>
     <p class="f-15 block tc mb-70">施工事例</p>
     <div class="gallery_wrap mb-80 mxc">
       <div class="gallery_outline">

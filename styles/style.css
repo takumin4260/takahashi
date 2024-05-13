@@ -4,6 +4,7 @@ body {
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-style: normal;
     letter-spacing: 0.2em;
+    font-weight: 400;
 }
 
 a {
@@ -300,7 +301,7 @@ dl {
     }
 
     .mb-70 {
-        margin-bottom: 45px;
+        margin-bottom: 12vw;
     }
 
     .mb-80 {
@@ -527,4 +528,10 @@ display要素
     }
   }
 
+  .b-bottom{
+    border-bottom:1px solid #0F364A;
+  }
   
+  .fit{
+    width: fit-content;
+  }

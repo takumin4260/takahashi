@@ -1,0 +1,39 @@
+.gallery_container{
+  padding: calc(220/1280 * 100vw) calc(135/1280 * 100vw) calc(80/1280 * 100vw);
+  background-image: url("../img/top/estate_bg.png");
+  background-repeat: repeat;
+  background-color: #D7E1DE;
+  background-position: center center;
+}
+
+.gallery_container .gallery_no {
+  padding: 5px calc(15/1280 * 100vw);
+  border: 1px solid #0F364A;
+  border-radius: 100px;
+  width: fit-content;
+  background-color: white;
+}
+.detail{
+  display: flex;
+  align-items: center;
+}
+.title{
+  width: 5em;
+}
+.slash{
+  margin: 0 calc(15/1280 * 100vw);
+}
+
+.img_wrap{
+  margin-bottom: calc(100/1280 * 100vw);
+}
+
+.img_item{
+  width: calc(1000/1280 * 100vw);
+  height: calc(670/1280 * 100vw);
+  position: relative;
+  margin-bottom: calc(90/1280 * 100vw);
+}
+.img_item:last-child{
+  margin-bottom: 0;
+}

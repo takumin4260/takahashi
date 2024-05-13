@@ -1,3 +1,9 @@
+$('.hide-text').hide();
+$(".readmore").on("click", function() {
+    $(this).toggleClass("on-click");
+    $(this).prev().slideToggle();
+});
+
 //ハンバーガーメニュー制御
 $(".openbtn").click(function () {
   $(this).toggleClass('active');
