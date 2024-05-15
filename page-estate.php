@@ -98,7 +98,7 @@
                             </span>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <div class="img_box">
                     <!--画像が変に切れないようにするためにcontainにしているけど、左寄せにしたい-->
@@ -106,11 +106,11 @@
                         <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house.png" alt="">
                     </div>
                     <div class="img_item">
-                    <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_display.png" alt="">
+                        <img class="img-contain" src="<?php echo get_template_directory_uri(); ?>/img/estate/estate_house_display.png" alt="">
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="image_container">
             <p class="f-13 block mb-23">画像一覧</p>

@@ -10,7 +10,7 @@ body {
 a {
     text-decoration: none;
     display: block;
-    color:inherit
+    color:inherit;
 }
 
 p {
@@ -24,9 +24,9 @@ li {
 
 button {
     cursor: pointer;
-    color: black;
+    background-color: transparent;
+    color: inherit;
     border: none;
-    background-color: white;
 }
 
 img {
